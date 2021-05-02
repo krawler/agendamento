@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <title>Cadastro</title>
+</head>
+<body>
+    <h1>Cadastro de consulta</h1>
+    <hr>
+    <form action="">
+        <label for="name">Nome</label>
+        <input type="text" class="form-control" id="name" name="name" aria-placeholder="nome do paciente">
+        <br>
+        <label for="email">Email</label>
+        <input type="text" class="form-control" id="email" name="email" aria-placeholder="email@email.com">
+        <br>
+        <label for="cpf">CPF</label>
+        <input type="text" class="form-control" id="cpf" name="cpf" aria-placeholder="CPF"> 
+        <br>
+        <label for="description">Descrição</label>
+        <input type="text" class="form-control" id="description" name="description" aria-placeholder="descrição">
+        <br>
+        <label for="date">Data:</label>
+        <input type="date" class="form-control" id="date" name="date">
+        <br>
+        <label for="time">Hora:</label>
+        <input type="time" name="time" id="time" class="form-control">
+        <br>
+        <button class="btn btn-success btn-block">Agendar</button>
+    </form>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+<script src="/js/jquery.mask.min.js"></script>
+<script>
+    $('#cpf').mask('000.000.000-00');
+</script>
+</html>
