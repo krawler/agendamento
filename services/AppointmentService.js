@@ -7,7 +7,7 @@ class AppointmentService {
 
     async create(name, email, description, cpf, date, time){    
         
-        const newAppointment = new Appointment(name, email, description, cpf, date, time);
+        const newAppointment = new Appointment({name, email, description, cpf, date, time});
 
         try {
             await newAppointment.save();
@@ -16,6 +16,16 @@ class AppointmentService {
             console.log(error);
             return false;
         }
+        
+    }
+    
+    async GetAll(showFinished) {
+        
+        if(showFinished){
+            return await Appointment.find();
+        }else{
+            return await Appointment.find({'finished': false});
+        }   
     }
 
 }
